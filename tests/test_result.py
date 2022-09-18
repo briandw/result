@@ -20,7 +20,6 @@ def test_ok_factories() -> None:
     instance = Ok(1)
     assert instance._value == 1
     assert instance.is_ok() is True
-    assert instance.value_safe() == 1
 
 
 def test_err_factories() -> None:
